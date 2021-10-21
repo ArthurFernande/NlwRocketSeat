@@ -1,0 +1,91 @@
+<!-- so vamos terminar isso
+linguaem de marcações de hiper texto 
+Markups - marcação 
+tags 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Arthur Fernandes - DoWhile 2021</title>
+        <!--as tags que nao tem conteudo fecham nela mesmo-->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" 
+    rel="stylesheet">
+
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="avatar">
+                    <span>
+                        <img src="images/build.svg" alt="Selo Rocketseat"/> 
+                    </span>
+                   <img src="images/eu.jpeg" alt="Foto Pessoal"/> 
+                </div>
+                <h1 id="userName" >Arthur Andrade</h1>
+                <a 
+                    href="https://github.com/maykbrito"
+                    target="_blank" 
+                >
+                    <img
+                        src="images/github 2.svg"
+                        alt="logo github"
+                    >
+                    arthurfernandes
+                </a>
+
+                <p>Aluno do curso de Ciência da Computação da Universidade Federal de Campina Grande - Paraíba</p>
+                 <ul id='socialLinks'>
+                     <li class="youtube">
+                         <a href="https://youtube.com/maykbrito" target="_blank">
+                            <img src="images/youtube.svg" alt=" icone de youtube" />
+                        </a>
+                     </li>
+                     <li class="facebook">
+                        <a href="https://facebook.com/maykbrito" target="_blank">
+                            <img src="images/facebook.svg" alt="icone de facebook"  />
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://instagram.com/maykbrito" target="_blank">
+                            <img src="images/instagram.svg" alt="icone de instagram" target="_blank"/>
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com/maykbrito" target="_blank">
+                            <img src="images/twiter.svg" alt="icone de twitter" target="_blank"/>
+                        </a>
+                    </li>
+                 </ul>
+            </div>
+        </main>
+        <script>
+
+            const linksSocialMedia = {
+                github: "ArthurFernande",
+                youtube: "channel/UCS5TgN5vKwYrSRTX1k50eSg/about",
+                facebook: "arthur.fernandesdeandrade",
+                instagram: "ArthurAndrade07",
+                twitter: "jakelinytec"
+            }
+
+            function changeSocialMediaLinks(){
+                 for(let li of   socialLinks.children){
+                    const social = li.getAttribute("class")
+                     
+                    li.children[0].href =`https://${social}.com/${linksSocialMedia[social]}`
+                    
+                    alert(li.children[0].href)
+
+                 }
+            }
+            //vai
+
+            changeSocialMediaLinks()
+            
+        </script>
+
+    </body>
+</html>

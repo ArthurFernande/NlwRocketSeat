@@ -22,10 +22,10 @@ tags
                     <span>
                         <img src="images/build.svg" alt="Selo Rocketseat"/> 
                     </span>
-                   <img src="images/eu.jpeg" alt="Foto Pessoal"/> 
+                   <img src="images/eu.jpeg" alt="Foto Pessoal" id="userImage"/> 
                 </div>
-                <h1 id="userName" >Arthur Andrade</h1>
-                <a 
+                <h1 id="userName">Arthur Andrade</h1>
+                <a id="userLink"
                     href="https://github.com/maykbrito"
                     target="_blank" 
                 >
@@ -33,10 +33,10 @@ tags
                         src="images/github 2.svg"
                         alt="logo github"
                     >
-                    arthurfernandes
+                    <span id="userLogin">arthur</span>
                 </a>
 
-                <p>Aluno do curso de Ciência da Computação da Universidade Federal de Campina Grande - Paraíba</p>
+                <p id="userBio">Aluno do curso de Ciência da Computação da Universidade Federal de Campina Grande - Paraíba</p>
                  <ul id='socialLinks'>
                      <li class="youtube">
                          <a href="https://youtube.com/maykbrito" target="_blank">
@@ -61,31 +61,7 @@ tags
                  </ul>
             </div>
         </main>
-        <script>
-
-            const linksSocialMedia = {
-                github: "ArthurFernande",
-                youtube: "channel/UCS5TgN5vKwYrSRTX1k50eSg/about",
-                facebook: "arthur.fernandesdeandrade",
-                instagram: "ArthurAndrade07",
-                twitter: "jakelinytec"
-            }
-
-            function changeSocialMediaLinks(){
-                 for(let li of   socialLinks.children){
-                    const social = li.getAttribute("class")
-                     
-                    li.children[0].href =`https://${social}.com/${linksSocialMedia[social]}`
-                    
-                    alert(li.children[0].href)
-
-                 }
-            }
-            //vai , aprendendo java script,html e css na nova branch
-
-            changeSocialMediaLinks()
-            
-        </script>
+        <script src="main.js"></script>
 
     </body>
 </html>

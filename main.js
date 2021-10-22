@@ -19,7 +19,6 @@ function changeSocialMediaLinks(){
      }
 }
 
-
 changeSocialMediaLinks()
 
 function getGiHubProfileInfos(){
